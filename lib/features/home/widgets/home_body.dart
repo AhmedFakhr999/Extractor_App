@@ -58,7 +58,7 @@ class _HomeBodyState extends State<HomeBody>
               ],
             ),
 
-            CustomeBtn(),
+            CustomeBtn(context: context),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -71,7 +71,12 @@ class _HomeBodyState extends State<HomeBody>
                 ),
               ],
             ),
-            DocumentObject(),
+            DocumentObject(
+              onTap: () {},
+              documentObjectIcon: Icons.file_present_outlined,
+              documentText: 'Document1',
+              documentSubText: 'Extracted Text from the file',
+            ),
           ],
         ),
       ),
